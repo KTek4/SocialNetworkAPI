@@ -22,8 +22,6 @@ router.route('/:userPId')
     .put(updateUser)
     .delete(deleteUser);
 
-// add or remove a friend to a user by using initially the users object ID, 
-// and then the friends object ID in the params
 router.route('/:userPId/friends/:friendPId')
     .post(addFriend)
     .delete(deleteFriend);
